@@ -65,11 +65,6 @@ Provides contact details and communication options for users.
 Includes quick links, social media icons, and branding information.
 
 
-🖼️ How to Add Project Screenshots
-Create a folder named images inside your GitHub repository.
-Upload all website screenshots into that folder.
-Use this format to display images in README:
-![Image Name](images/your-image-name.png)
 📁 Project Structure
 The-Wee-Wardrobe/
 │
