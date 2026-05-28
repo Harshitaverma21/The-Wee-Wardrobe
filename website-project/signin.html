@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "delius";
+    }
+
+    body {
+      background: rgb(181, 218, 181);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+    }
+
+    .button {
+      height: 30px;
+      width: 100px;
+      border-radius: 30px;
+      position: absolute;
+      top: 8px;
+      left: 7px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border: none;
+      color: seagreen;
+    }
+
+    button a{
+      text-decoration: none;
+      color: seagreen;
+    }
+
+    .button:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+    }
+
+    .login-container {
+      background: white;
+      padding: 2rem 3rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      color: seagreen;
+    }
+
+    .login-container form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .login-container label {
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      text-align: left;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.25rem;
+      border: 2px solid seagreen;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    .login-container input[type="text"]:focus,
+    .login-container input[type="password"]:focus {
+      border-color: black;
+      outline: none;
+    }
+
+    .login-container button {
+      background: darkseagreen;
+      color: white;
+      padding: 0.75rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 0.5rem;
+    }
+
+    .login-container button:hover {
+      background: rgb(201, 231, 201);
+    }
+
+    .login-container .options {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .login-container .options a {
+      color: seagreen;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .login-container .options a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="button">
+    <h3><a href="index.html">Go Back</a></h3>
+  </button>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="" method="POST">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required />
+
+      <button type="submit">Log In</button>
+
+      <div class="options">
+        <label>
+          <input type="checkbox" name="remember" /> Remember me
+        </label>
+        <a>Forgot password?</a>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
